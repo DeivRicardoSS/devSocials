@@ -39,5 +39,7 @@ CREATE TABLE Comentarios(
     PRIMARY KEY(id)
 );
 
+SELECT * FROM Usuarios;
+
 
 #SELECT usr_idusuario, DATE_FORMAT(evn_dtevento, "%d/%m/%Y") AS data_evento FROM evn_evento;
