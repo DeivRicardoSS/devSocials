@@ -88,7 +88,7 @@ app.delete('/itens/:id', (req, res) => {
 
     if (id) {
         // Exclusão MySQL para remover um item
-        conexao.query('DELETE FROM seus_itens WHERE id = ?', [id], (err, results) => {
+        conexao.query('DELETE FROM Usuarios WHERE id = ?', [id], (err, results) => {
             if (err) {
                 console.error('Erro ao excluir no banco de dados:', err);
                 res.status(500).json({ erro: 'Erro ao excluir no banco de dados' });
